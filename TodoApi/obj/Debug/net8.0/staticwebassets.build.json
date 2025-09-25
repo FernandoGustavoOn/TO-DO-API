@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "zI4Vdcy/6HO6yFK7cSrc+AN4v3djASMyYrWlyWReebw=",
+  "Source": "TodoApi",
+  "BasePath": "_content/TodoApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TodoApi\\wwwroot",
+      "Source": "TodoApi",
+      "ContentRoot": "C:\\PROJETOS\\.net\\TodoApi\\wwwroot\\",
+      "BasePath": "_content/TodoApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\PROJETOS\\.net\\TodoApi\\wwwroot\\index.html",
+      "SourceId": "TodoApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\PROJETOS\\.net\\TodoApi\\wwwroot\\",
+      "BasePath": "_content/TodoApi",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\PROJETOS\\.net\\TodoApi\\wwwroot\\script.js",
+      "SourceId": "TodoApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\PROJETOS\\.net\\TodoApi\\wwwroot\\",
+      "BasePath": "_content/TodoApi",
+      "RelativePath": "script.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\script.js"
+    },
+    {
+      "Identity": "C:\\PROJETOS\\.net\\TodoApi\\wwwroot\\styles.css",
+      "SourceId": "TodoApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\PROJETOS\\.net\\TodoApi\\wwwroot\\",
+      "BasePath": "_content/TodoApi",
+      "RelativePath": "styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\styles.css"
+    }
+  ]
+}

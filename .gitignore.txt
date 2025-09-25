@@ -1,0 +1,16 @@
+# Arquivos de dependências e build
+[Bb]in/
+[Oo]bj/
+
+# Arquivos de configuração de usuário e temporários
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+appsettings.Development.json
+
+# Diretórios do Rider
+.idea/
+
+# Diretórios do VS Code
+.vscode/

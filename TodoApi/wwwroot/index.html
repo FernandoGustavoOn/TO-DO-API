@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoApp - Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-tasks"></i> TodoApp</h1>
+            <p>Gerencie suas tarefas de forma simples e eficiente</p>
+        </header>
+
+        <div class="todo-form">
+            <form id="todoForm" class="form">
+                <div class="form-group">
+                    <input type="text" id="todoTitle" placeholder="Digite o título da tarefa..." required>
+                </div>
+                <div class="form-group">
+                    <textarea id="todoDescription" placeholder="Descrição (opcional)..." rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-plus"></i> Adicionar Tarefa
+                </button>
+            </form>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">
+                <i class="fas fa-list"></i> Todas
+            </button>
+            <button class="filter-btn" data-filter="pending">
+                <i class="fas fa-clock"></i> Pendentes
+            </button>
+            <button class="filter-btn" data-filter="completed">
+                <i class="fas fa-check"></i> Concluídas
+            </button>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <span class="stat-number" id="totalTasks">0</span>
+                <span class="stat-label">Total</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" id="pendingTasks">0</span>
+                <span class="stat-label">Pendentes</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" id="completedTasks">0</span>
+                <span class="stat-label">Concluídas</span>
+            </div>
+        </div>
+
+        <div class="todos-container">
+            <div id="loading" class="loading hidden">
+                <i class="fas fa-spinner fa-spin"></i> Carregando tarefas...
+            </div>
+            <div id="error" class="error hidden">
+                <i class="fas fa-exclamation-triangle"></i>
+                <span id="errorMessage"></span>
+            </div>
+            <div id="todosList" class="todos-list">
+                <!-- Tarefas serão inseridas aqui dinamicamente -->
+            </div>
+            <div id="emptyState" class="empty-state hidden">
+                <i class="fas fa-inbox"></i>
+                <h3>Nenhuma tarefa encontrada</h3>
+                <p>Adicione uma nova tarefa para começar!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para edição -->
+    <div id="editModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-edit"></i> Editar Tarefa</h2>
+                <button class="close-btn" id="closeModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form id="editForm" class="modal-form">
+                <input type="hidden" id="editId">
+                <div class="form-group">
+                    <label for="editTitle">Título:</label>
+                    <input type="text" id="editTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="editDescription">Descrição:</label>
+                    <textarea id="editDescription" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="editIsCompleted">
+                        <span class="checkmark"></span>
+                        Tarefa concluída
+                    </label>
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-secondary" id="cancelEdit">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save"></i> Salvar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
