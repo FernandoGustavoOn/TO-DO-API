@@ -1,0 +1,37 @@
+**/.classpath
+**/.dockerignore
+**/.env
+**/.git
+**/.gitignore
+**/.project
+**/.settings
+**/.toolstarget
+**/.vs
+**/.vscode
+**/*.*proj.user
+**/azds.yaml
+**/bin
+**/charts
+**/docker-compose*
+**/node_modules
+**/npm-debug.log
+**/obj
+**/secrets.dev.yaml
+**/values.dev.yaml
+**/*.md
+Dockerfile*
+README*
+LICENSE*
+.git*
+
+# dotnet user secrets
+**/secrets.json
+
+# misc
+*.db
+*.sqlite
+*.suo
+*.user
+*.swp
+*.tmp
+*.log

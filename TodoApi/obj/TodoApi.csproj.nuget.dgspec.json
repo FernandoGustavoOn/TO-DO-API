@@ -47,13 +47,13 @@
               "target": "Package",
               "version": "[8.0.20, )"
             },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
+            "Microsoft.EntityFrameworkCore.Design": {
               "target": "Package",
-              "version": "[8.0.20, )"
+              "version": "[9.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
-              "version": "[8.0.20, )"
+              "version": "[9.0.1, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
